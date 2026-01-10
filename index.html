@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethan Barr — Software Engineer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="description" content="Ethan Barr — Software Engineer. Backend + full-stack. Resume and portfolio." />
+</head>
+
+<body>
+    <header class="container header">
+        <div class="title">
+            <h1 id="name">Ethan Barr</h1>
+            <p id="headline" class="muted">Software Engineer • Backend / Full-stack</p>
+            <p id="location" class="muted">Baltimore, MD • Open to Remote/Hybrid</p>
+        </div>
+
+        <div class="actions">
+            <a id="github" class="chip" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            <a id="linkedin" class="chip" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a id="download" class="btn" href="assets/Ethan_Barr_Resume.pdf" download>
+                Download Resume (PDF)
+            </a>
+        </div>
+    </header>
+
+    <main class="container main">
+        <section class="card">
+            <h2>Summary</h2>
+            <p id="summary"></p>
+        </section>
+
+        <section class="card">
+            <h2>Skills</h2>
+            <div id="skills" class="pill-grid"></div>
+        </section>
+
+        <section class="card">
+            <h2>Experience</h2>
+            <div id="experience" class="stack"></div>
+        </section>
+
+        <section class="card">
+            <h2>Projects</h2>
+            <div id="projects" class="stack"></div>
+        </section>
+
+        <section class="card">
+            <h2>Education</h2>
+            <div id="education" class="stack"></div>
+        </section>
+    </main>
+
+    <footer class="container footer muted">
+        <span id="updated"></span>
+    </footer>
+
+    <script src="resume-data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
