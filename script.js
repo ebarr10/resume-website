@@ -95,6 +95,7 @@ setText("updated", d.updatedText);
 
 setLink("github", d.github);
 setLink("linkedin", d.linkedin);
+setLink("website", d.website);
 
 renderPills("skills", d.skills);
 renderListSection("experience", d.experience, "experience");

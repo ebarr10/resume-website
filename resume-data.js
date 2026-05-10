@@ -2,12 +2,15 @@ window.RESUME_DATA = {
     name: "Ethan Barr",
     headline: "Software Engineer • Backend / Full-stack",
     location: "Baltimore, MD • Open to Remote/Hybrid",
+
     github: "https://github.com/ebarr10",
     linkedin: "https://www.linkedin.com/in/ethan-barr--/",
-    updatedText: "Updated: January 2026",
+    website: "https://ethanbarr.netlify.app/",
+
+    updatedText: "Updated: May 2026",
 
     summary:
-        "Software Engineer with 3+ years as an early employee at a startup, building and scaling backend systems end-to-end. Strong in Django/DRF, data pipelines, debugging production issues, and collaborating cross-functionally to ship reliable features.",
+        "Software Engineer with 4+ years building backend systems, operational tooling, and data workflows in a fast-growing startup environment. Experienced in Django/DRF, BigQuery, and GCP, with a focus on production reliability, performance optimization, observability, and cross-functional engineering.",
 
     skills: [
         "Python",
@@ -15,13 +18,16 @@ window.RESUME_DATA = {
         "Django REST Framework",
         "MySQL",
         "BigQuery",
-        "Redis",
-        "Celery",
         "GCP",
+        "Redis",
+        "React",
+        "Next.js",
         "REST APIs",
         "Data Pipelines",
-        "Testing & Debugging",
         "Performance Optimization",
+        "Observability",
+        "Production Reliability",
+        "Cross-functional Collaboration",
     ],
 
     experience: [
@@ -31,18 +37,23 @@ window.RESUME_DATA = {
             location: "Remote / Baltimore, MD",
             dates: "2023 — Present",
             bullets: [
-                "Scaled a Django/DRF platform supporting large asset + miner inventories (hundreds of thousands of records) with performance-focused query and caching improvements.",
-                "Built and maintained operational workflows (inventory sync, issue management, power control triggers) with strong observability and supportability in production.",
-                "Partnered with support and stakeholders to diagnose customer-impacting incidents, implement fixes, and communicate clearly about constraints and timelines.",
+                "Built and scaled Django/DRF backend systems supporting large asset and miner inventories across hundreds of thousands of records.",
+                "Developed operational workflows for inventory sync, issue management, power controls, exports, and customer-facing production support.",
+                "Improved system performance and reliability through query optimization, caching, observability improvements, and debugging of production issues.",
+                "Partnered with support, product, and stakeholders to investigate customer-impacting incidents, communicate tradeoffs, and ship practical fixes.",
+                "Joined as the 3rd employee and contributed to scaling backend systems and operational tooling through a period of rapid company growth.",
             ],
         },
+
         {
-            title: "Software Engineering Intern / (Previous Role)",
-            company: "Company Name",
-            location: "City, State",
-            dates: "2022 — 2022",
+            title: "Software Engineering Intern",
+            company: "National Committee for Quality Assurance (NCQA)",
+            location: "Remote",
+            dates: "May 2020 — August 2021",
             bullets: [
-                "Add 2–3 bullets that show impact, measurable results, and collaboration.",
+                "Collaborated on internal engineering tools, including debugger workflows for medical language logic and file review interfaces.",
+                "Built and tested React/TypeScript components for a file review website that parsed file types and displayed relevant information.",
+                "Created testing environments, mocks, and unit tests to validate application behavior and catch issues during development.",
             ],
         },
     ],
@@ -52,15 +63,27 @@ window.RESUME_DATA = {
             name: "ChangeLogScribe",
             link: "https://www.producthunt.com/posts/changelogscribe?utm_source=other&utm_medium=social",
             bullets: [
-                "SaaS that generates changelogs/release notes from GitHub activity with tiered pricing and automated delivery.",
-                "Implemented GitHub App flows, Stripe billing, and email notifications; focused on UX and reliable automation.",
+                "Built a SaaS product that generates structured changelogs and release notes from GitHub activity.",
+                "Implemented GitHub App flows, Stripe billing, and email notifications with a focus on reliable automation and clean user experience.",
             ],
         },
+
+        {
+            name: "Personal Website & Engineering Notes",
+            link: "https://ethanbarr.netlify.app/",
+            bullets: [
+                "Designed and built a personal website to showcase engineering projects, technical notes, and long-form writing.",
+                "Implemented reusable layouts and structured content organization for projects, articles, and learning documentation using modern frontend tooling.",
+            ],
+        },
+
         {
             name: "Sophia (Slack AI Assistant)",
             link: "",
             bullets: [
-                "Slack bot that summarizes discussions and answers questions from channel history using LLM tooling and structured prompts.",
+                "Built a Slack assistant that summarizes channel discussions and answers questions using structured prompts and LLM tooling.",
+                "Integrated Slack command handling and message-history retrieval workflows to support contextual summaries and question answering.",
+                "Explored prompt structure, context limits, and reliability tradeoffs when turning noisy chat history into useful summaries.",
             ],
         },
     ],
