@@ -37,7 +37,7 @@ window.RESUME_DATA = {
             location: "Remote / Baltimore, MD",
             dates: "2023 — Present",
             bullets: [
-                "Joined as the 3rd employee and contributed to scaling backend systems and operational tooling through a period of rapid company growth.", 
+                "Joined as the 3rd employee and contributed to scaling backend systems and operational tooling through a period of rapid company growth.",
                 "Built and scaled Django/DRF backend systems supporting large asset and miner inventories across hundreds of thousands of records.",
                 "Developed operational workflows for inventory sync, issue management, power controls, exports, and customer-facing production support.",
                 "Improved system performance and reliability through query optimization, caching, observability improvements, and debugging of production issues.",
