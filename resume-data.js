@@ -18,7 +18,7 @@ window.RESUME_DATA = {
         "Django REST Framework",
         "MySQL",
         "BigQuery",
-        "GCP",
+        "Google Cloud Platform (GCP)",
         "Redis",
         "React",
         "Next.js",
