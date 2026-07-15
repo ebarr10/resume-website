@@ -24,6 +24,35 @@ function renderPills(id, items) {
     });
 }
 
+function renderSkillGroups(id, groups, fallbackItems) {
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    el.innerHTML = "";
+
+    if (!groups || !groups.length) {
+        renderPills(id, fallbackItems);
+        return;
+    }
+
+    groups.forEach((group) => {
+        const section = document.createElement("div");
+        section.className = "skill-group";
+
+        const label = document.createElement("span");
+        label.className = "skill-label";
+        label.textContent = `${group.label}:`;
+
+        const list = document.createElement("span");
+        list.className = "skill-list";
+        list.textContent = (group.skills || []).join(", ");
+
+        section.appendChild(label);
+        section.appendChild(list);
+        el.appendChild(section);
+    });
+}
+
 function renderListSection(containerId, items, type) {
     const el = document.getElementById(containerId);
     if (!el) return;
@@ -97,7 +126,7 @@ setLink("github", d.github);
 setLink("linkedin", d.linkedin);
 setLink("website", d.website);
 
-renderPills("skills", d.skills);
+renderSkillGroups("skills", d.skillGroups, d.skills);
 renderListSection("experience", d.experience, "experience");
 renderListSection("projects", d.projects, "projects");
 renderListSection("education", d.education, "education");
