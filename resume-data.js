@@ -1,47 +1,75 @@
 window.RESUME_DATA = {
     name: "Ethan Barr",
-    headline: "Software Engineer • Backend / Full-stack",
+    headline: "Software Engineer • Backend / Full-stack • Production Systems",
     location: "Baltimore, MD • Open to Remote/Hybrid",
 
     github: "https://github.com/ebarr10",
     linkedin: "https://www.linkedin.com/in/ethan-barr--/",
     website: "https://ethanbarr.netlify.app/",
 
-    updatedText: "Updated: May 2026",
+    updatedText: "Updated: July 2026",
 
     summary:
-        "Software Engineer with 4+ years building backend systems, operational tooling, and data workflows in a fast-growing startup environment. Experienced in Django/DRF, BigQuery, and GCP, with a focus on production reliability, performance optimization, observability, and cross-functional engineering.",
+        "Full-stack software engineer with 4+ years building production Django/DRF systems, operational tooling, and data workflows in a fast-growing startup environment. Early engineer at Foreman with experience owning backend APIs, automation workflows, performance improvements, and customer-impacting production support across mining infrastructure and asset operations.",
+
+    skillGroups: [
+        {
+            label: "Languages",
+            skills: ["Python", "TypeScript", "JavaScript", "SQL", "HTML", "CSS", "Bash"],
+        },
+        {
+            label: "Backend",
+            skills: ["Django", "Django REST Framework", "FastAPI", "REST APIs", "MySQL", "Redis", "Data Modeling"],
+        },
+        {
+            label: "Frontend",
+            skills: ["React", "Next.js", "Tailwind CSS", "Reusable Components", "Responsive UI"],
+        },
+        {
+            label: "Cloud & DevOps",
+            skills: ["Google Cloud Platform", "BigQuery", "Docker", "Linux", "systemd", "Tailscale", "Prometheus", "Grafana"],
+        },
+        {
+            label: "Testing & Quality",
+            skills: ["Django Tests", "Unit Testing", "Integration Testing", "Code Review", "Production Debugging"],
+        },
+        {
+            label: "AI & Automation",
+            skills: ["GitHub Apps", "LLM Tooling", "Prompt Design", "Workflow Automation", "Operational Tooling"],
+        },
+    ],
 
     skills: [
         "Python",
+        "TypeScript",
         "Django",
         "Django REST Framework",
-        "MySQL",
-        "BigQuery",
-        "Google Cloud Platform (GCP)",
-        "Redis",
+        "FastAPI",
         "React",
         "Next.js",
-        "REST APIs",
-        "Data Pipelines",
-        "Performance Optimization",
-        "Observability",
-        "Production Reliability",
-        "Cross-functional Collaboration",
+        "MySQL",
+        "Redis",
+        "BigQuery",
+        "GCP",
+        "Docker",
+        "Linux",
+        "Tailscale",
+        "Prometheus",
+        "Grafana",
     ],
 
     experience: [
         {
             title: "Software Engineer",
-            company: "Foreman (Startup)",
+            company: "Foreman",
             location: "Remote / Baltimore, MD",
             dates: "2023 — Present",
             bullets: [
-                "Joined as the 3rd employee and contributed to scaling backend systems and operational tooling through a period of rapid company growth.",
-                "Built and scaled Django/DRF backend systems supporting large asset and miner inventories across hundreds of thousands of records.",
-                "Developed operational workflows for inventory sync, issue management, power controls, exports, and customer-facing production support.",
-                "Improved system performance and reliability through query optimization, caching, observability improvements, and debugging of production issues.",
-                "Partnered with support, product, and stakeholders to investigate customer-impacting incidents, communicate tradeoffs, and ship practical fixes.",
+                "Joined as an early engineer and helped scale backend systems, operational workflows, and production support tooling through a period of rapid company growth.",
+                "Built and maintained Django/DRF APIs supporting miner inventory, issue workflows, exports, tagging, power controls, and customer-facing operational tooling across large asset datasets.",
+                "Implemented automation for trigger-driven actions such as reboots, tagging, and operational state changes, using Redis-backed coordination and guardrails to improve reliability.",
+                "Improved production performance and reliability through query optimization, caching, observability improvements, targeted debugging, and careful rollout of customer-impacting fixes.",
+                "Partnered directly with support, product, and stakeholders to investigate incidents, clarify technical tradeoffs, and ship pragmatic improvements to high-use internal and customer workflows.",
             ],
         },
 
@@ -51,9 +79,9 @@ window.RESUME_DATA = {
             location: "Remote",
             dates: "May 2020 — August 2021",
             bullets: [
-                "Collaborated on internal engineering tools, including debugger workflows for medical language logic and file review interfaces.",
-                "Built and tested React/TypeScript components for a file review website that parsed file types and displayed relevant information.",
-                "Created testing environments, mocks, and unit tests to validate application behavior and catch issues during development.",
+                "Built and tested React/TypeScript components for internal file review workflows, including parsing file types and displaying relevant review information.",
+                "Collaborated on debugger and validation tooling for medical language logic, improving how internal users inspected and reviewed complex rule behavior.",
+                "Created test environments, mocks, and unit tests to validate application behavior and reduce regressions during development.",
             ],
         },
     ],
@@ -63,27 +91,29 @@ window.RESUME_DATA = {
             name: "ChangeLogScribe",
             link: "https://www.producthunt.com/posts/changelogscribe?utm_source=other&utm_medium=social",
             bullets: [
-                "Built a SaaS product that generates structured changelogs and release notes from GitHub activity.",
-                "Implemented GitHub App flows, Stripe billing, and email notifications with a focus on reliable automation and clean user experience.",
+                "Built a SaaS product that turns GitHub activity into structured changelogs and release notes for engineering teams.",
+                "Implemented GitHub App integration, Stripe billing, and email notification workflows with an emphasis on reliable automation and a clean product experience.",
+                "Designed the project around a practical developer workflow: connect a repository, generate release-ready summaries, and reduce manual changelog writing.",
             ],
         },
 
         {
-            name: "Personal Website & Engineering Notes",
-            link: "https://ethanbarr.netlify.app/",
-            bullets: [
-                "Designed and built a personal website to showcase engineering projects, technical notes, and long-form writing.",
-                "Implemented reusable layouts and structured content organization for projects, articles, and learning documentation using modern frontend tooling.",
-            ],
-        },
-
-        {
-            name: "Sophia (Slack AI Assistant)",
+            name: "Homelab Operations Dashboard",
             link: "",
             bullets: [
-                "Built a Slack assistant that summarizes channel discussions and answers questions using structured prompts and LLM tooling.",
-                "Integrated Slack command handling and message-history retrieval workflows to support contextual summaries and question answering.",
-                "Explored prompt structure, context limits, and reliability tradeoffs when turning noisy chat history into useful summaries.",
+                "Building a private Raspberry Pi 5 homelab dashboard that monitors system health, Docker services, network checks, and infrastructure diagnostics from a custom web UI.",
+                "Implemented a FastAPI backend and Next.js frontend with health endpoints, action logs, reboot controls, and a Tailscale-gated deployment model.",
+                "Used Docker, Linux, systemd, Prometheus, Grafana, and secure sudoers configuration to practice production-style operations on real hardware.",
+            ],
+        },
+
+        {
+            name: "Personal Website & Engineering Archive",
+            link: "https://ethanbarr.netlify.app/",
+            bullets: [
+                "Designed and built a Next.js personal website to present selected engineering work, project case studies, technical notes, recipes, and long-form writing.",
+                "Structured the site to separate polished selected work from smaller experiments and learning projects, improving how public work is positioned for recruiters and technical reviewers.",
+                "Implemented reusable layouts and content organization patterns using TypeScript, Tailwind CSS, and modern frontend tooling.",
             ],
         },
     ],
