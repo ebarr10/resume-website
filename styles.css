@@ -2,9 +2,9 @@
     --bg: #f8fafc;
     --card: #ffffff;
     --text: #111827;
-    --muted: #6b7280;
-    --border: rgba(15, 23, 42, 0.08);
-    --accent: #2563eb;
+    --muted: #4b5563;
+    --border: rgba(15, 23, 42, 0.16);
+    --accent: #1f4e79;
 }
 
 * {
@@ -31,17 +31,24 @@ body {
 }
 
 .header {
-    padding: 32px 0 20px;
+    padding: 32px 0 16px;
     display: flex;
     gap: 18px;
     justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
+    border-bottom: 2px solid var(--accent);
 }
 
 .title h1 {
     margin: 0;
+    color: var(--accent);
     font-size: 40px;
     letter-spacing: -0.02em;
+}
+
+.title p {
+    margin-top: 4px;
 }
 
 .muted {
@@ -58,19 +65,12 @@ body {
 
 .chip {
     border: 1px solid var(--border);
-
     color: var(--text);
-
     text-decoration: none;
-
     padding: 8px 12px;
-
     border-radius: 999px;
-
     font-size: 14px;
-
     background: white;
-
     transition:
         background 0.15s ease,
         border-color 0.15s ease;
@@ -82,19 +82,12 @@ body {
 
 .btn {
     text-decoration: none;
-
     color: white;
-
     background: #111827;
-
     padding: 10px 14px;
-
     border-radius: 10px;
-
-    font-weight: 600;
-
+    font-weight: 700;
     font-size: 14px;
-
     transition:
         background 0.15s ease,
         transform 0.15s ease;
@@ -106,16 +99,16 @@ body {
 }
 
 .main {
-    padding: 10px 0 40px;
+    padding: 14px 0 40px;
     display: grid;
-    gap: 14px;
+    gap: 12px;
 }
 
 .card {
     border: 1px solid var(--border);
     background: var(--card);
-    border-radius: 14px;
-    padding: 20px;
+    border-radius: 12px;
+    padding: 18px 20px;
     box-shadow:
         0 1px 2px rgba(0, 0, 0, 0.03),
         0 8px 24px rgba(0, 0, 0, 0.03);
@@ -123,8 +116,12 @@ body {
 
 h2 {
     margin: 0 0 10px;
-    font-size: 18px;
+    padding-bottom: 4px;
+    border-bottom: 1.5px solid var(--accent);
+    color: var(--accent);
+    font-size: 17px;
     letter-spacing: 0.01em;
+    text-transform: uppercase;
 }
 
 p {
@@ -132,29 +129,45 @@ p {
     line-height: 1.55;
 }
 
+strong {
+    color: #0f172a;
+    font-weight: 800;
+}
+
 .pill-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    display: grid;
+    gap: 5px;
+}
+
+.skill-group {
+    line-height: 1.45;
+}
+
+.skill-label {
+    color: #0f172a;
+    font-weight: 800;
+}
+
+.skill-list {
+    margin-left: 4px;
 }
 
 .pill {
     border: 1px solid var(--border);
-
     padding: 7px 10px;
-
     border-radius: 999px;
-
     background: #f9fafb;
-
     font-size: 13px;
-
     color: var(--text);
 }
 
 .stack {
     display: grid;
-    gap: 14px;
+    gap: 16px;
+}
+
+.item {
+    break-inside: avoid;
 }
 
 .item-head {
@@ -171,33 +184,53 @@ p {
 .item-sub {
     color: var(--muted);
     font-size: 14px;
+    line-height: 1.35;
+}
+
+.item-location {
+    margin-top: 2px;
+    font-size: 13px;
 }
 
 .item-date {
-    color: var(--muted);
+    color: #111827;
     font-size: 14px;
+    font-weight: 700;
     white-space: nowrap;
 }
 
+.nested-sections {
+    display: grid;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.nested-section-title {
+    color: var(--accent);
+    font-weight: 800;
+    margin-bottom: -2px;
+}
+
 ul {
-    margin: 10px 0 0;
+    margin: 6px 0 0;
     padding-left: 18px;
 }
 
 li {
-    margin: 6px 0;
+    margin: 5px 0;
     color: var(--text);
-    line-height: 1.5;
+    line-height: 1.45;
 }
 
 a.inline {
     color: var(--accent);
+    font-weight: 700;
     text-decoration: none;
-    border-bottom: 1px solid rgba(96, 165, 250, 0.25);
+    border-bottom: 1px solid rgba(31, 78, 121, 0.25);
 }
 
 a.inline:hover {
-    border-bottom-color: rgba(96, 165, 250, 0.6);
+    border-bottom-color: rgba(31, 78, 121, 0.7);
 }
 
 .footer {
@@ -219,8 +252,8 @@ a.inline:hover {
     body {
         background: #fff !important;
         color: #111 !important;
-        font-size: 10px;
-        line-height: 1.25;
+        font-size: 9.4px;
+        line-height: 1.22;
     }
 
     .inline {
@@ -240,19 +273,20 @@ a.inline:hover {
 
     .header {
         display: block;
-        padding: 0 0 8px;
-        margin-bottom: 8px;
-        border-bottom: 1px solid #999;
+        padding: 0 0 6px;
+        margin-bottom: 6px;
+        text-align: center;
+        border-bottom: 1.5px solid var(--accent);
     }
 
     .title h1 {
-        font-size: 22px;
+        font-size: 23px;
         margin-bottom: 2px;
     }
 
     .title p {
-        font-size: 10px;
-        line-height: 1.2;
+        font-size: 9.5px;
+        line-height: 1.15;
     }
 
     .main {
@@ -264,25 +298,29 @@ a.inline:hover {
         border: none;
         background: transparent !important;
         padding: 0;
-        margin: 0 0 8px;
+        margin: 0 0 7px;
         border-radius: 0;
         break-inside: avoid;
     }
 
     h2 {
-        font-size: 11px;
+        font-size: 10.5px;
         margin: 0 0 4px;
         padding-bottom: 2px;
-        border-bottom: 1px solid #bbb;
-        text-transform: uppercase;
+        border-bottom: 1px solid var(--accent);
     }
 
     p {
-        line-height: 1.3;
+        line-height: 1.25;
     }
 
     .pill-grid {
         display: block;
+    }
+
+    .skill-group {
+        font-size: 9.4px;
+        line-height: 1.22;
     }
 
     .pill {
@@ -291,7 +329,7 @@ a.inline:hover {
         padding: 0;
         margin: 0 8px 0 0;
         background: transparent;
-        font-size: 10px;
+        font-size: 9.4px;
     }
 
     .stack {
@@ -302,29 +340,46 @@ a.inline:hover {
         display: flex;
         justify-content: space-between;
         gap: 8px;
-        margin-top: 4px;
+        margin-top: 3px;
     }
 
     .item-title {
-        font-size: 10.5px;
-        font-weight: 700;
+        font-size: 10px;
+        font-weight: 800;
     }
 
     .item-sub,
     .item-date,
+    .item-location,
     .muted {
-        font-size: 9.5px;
+        font-size: 9px;
         color: #333 !important;
     }
 
+    .nested-sections {
+        display: block;
+        margin-top: 3px;
+    }
+
+    .nested-section {
+        margin-top: 3px;
+    }
+
+    .nested-section-title {
+        font-size: 9.5px;
+        color: #111 !important;
+        font-weight: 800;
+        margin: 0;
+    }
+
     ul {
-        margin: 3px 0 6px;
+        margin: 2px 0 4px;
         padding-left: 14px;
     }
 
     li {
-        margin: 2px 0;
-        line-height: 1.25;
+        margin: 1px 0;
+        line-height: 1.22;
         color: #111 !important;
     }
 
