@@ -95,6 +95,7 @@ window.RESUME_DATA = {
                     label: "Startup ownership & cross-functional execution",
                     bullets: [
                         "Joined as an **early engineer** and helped scale engineering practices while working directly with support, product, and stakeholders on production issues and feature delivery.",
+                        "Served in **customer-facing support rotations and early product demos**, partnering with Customer Success and customers to triage issues, communicate timelines, and turn workflow feedback into timely engineering fixes.",
                         "Reviewed implementation approaches, clarified technical tradeoffs, and shipped fixes where backend behavior, frontend state, and operational expectations needed to line up.",
                     ],
                 },
