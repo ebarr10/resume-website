@@ -1,6 +1,6 @@
 window.RESUME_DATA = {
     name: "Ethan Barr",
-    headline: "Software Engineer • Backend / Full-stack • Production Systems",
+    headline: "Full-Stack Software Engineer • Backend Systems & Automation",
     location: "Baltimore, MD • Open to Remote/Hybrid",
 
     github: "https://github.com/ebarr10",
@@ -15,11 +15,11 @@ window.RESUME_DATA = {
     skillGroups: [
         {
             label: "Languages",
-            skills: ["Python", "TypeScript", "JavaScript", "SQL", "HTML", "CSS", "Bash"],
+            skills: ["Python", "TypeScript", "JavaScript", "Java", "C", "SQL", "HTML", "CSS"],
         },
         {
             label: "Backend",
-            skills: ["Django", "Django REST Framework", "FastAPI", "REST APIs", "MySQL", "Redis", "Data Modeling"],
+            skills: ["Django", "Django REST Framework", "FastAPI", "Node.js", "REST APIs", "MySQL", "Redis", "Data Modeling"],
         },
         {
             label: "Frontend",
@@ -42,9 +42,13 @@ window.RESUME_DATA = {
     skills: [
         "Python",
         "TypeScript",
+        "JavaScript",
+        "Java",
+        "C",
         "Django",
         "Django REST Framework",
         "FastAPI",
+        "Node.js",
         "React",
         "Next.js",
         "MySQL",
