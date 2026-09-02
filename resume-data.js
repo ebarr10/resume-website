@@ -121,7 +121,6 @@ window.RESUME_DATA = {
                     bullets: [
                         "Helped scale engineering practices from the founding team onward, working directly with support, product, and stakeholders on production issues and feature delivery.",
                         "Served in **customer-facing support rotations and early product demos**, partnering with Customer Success and customers to triage issues, communicate timelines, and turn workflow feedback into timely engineering fixes.",
-                        "Reviewed implementation approaches, clarified technical tradeoffs, and shipped fixes where backend behavior, frontend state, and operational expectations needed to line up.",
                     ],
                 },
             ],
@@ -135,7 +134,6 @@ window.RESUME_DATA = {
             bullets: [
                 "Built and tested **React/TypeScript components** for internal file review workflows, including parsing file types and displaying relevant review information.",
                 "Collaborated on debugger and validation tooling for medical language logic, improving how internal users inspected and reviewed complex rule behavior.",
-                "Created test environments, mocks, and unit tests to validate application behavior and reduce regressions during development.",
             ],
         },
     ],
@@ -148,7 +146,6 @@ window.RESUME_DATA = {
             bullets: [
                 "Built a SaaS product that turns **GitHub activity into structured changelogs and release notes** for engineering teams.",
                 "Implemented **GitHub App integration, Stripe billing, and email notifications** with an emphasis on reliable automation and a clean product experience.",
-                "Designed the workflow around a practical developer path: connect a repository, generate release-ready summaries, and reduce manual changelog writing.",
             ],
         },
 
@@ -159,7 +156,6 @@ window.RESUME_DATA = {
             bullets: [
                 "Building a private Raspberry Pi 5 dashboard that monitors **system health, Docker services, network checks, and infrastructure diagnostics** from a custom web UI.",
                 "Implemented a **FastAPI backend and Next.js frontend** with health endpoints, action logs, reboot controls, and a Tailscale-gated deployment model.",
-                "Used real hardware and Linux services to practice production-style operations, including secure command execution, service management, and observability.",
             ],
         },
 
@@ -170,7 +166,6 @@ window.RESUME_DATA = {
             bullets: [
                 "Designed and built a personal website to present **selected engineering work, case studies, technical notes, recipes, and long-form writing**.",
                 "Restructured project presentation to separate polished selected work from smaller experiments and learning projects, improving how public work is positioned.",
-                "Implemented reusable layouts and content organization patterns using TypeScript, Tailwind CSS, and modern frontend tooling.",
             ],
         },
     ],

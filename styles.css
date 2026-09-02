@@ -294,11 +294,15 @@ a.inline:hover {
         padding: 0;
     }
 
+    .item-location {
+        display: none !important;
+    }
+
     .card {
         border: none;
         background: transparent !important;
         padding: 0;
-        margin: 0 0 7px;
+        margin: 0 0 5px;
         border-radius: 0;
         break-inside: avoid;
     }
