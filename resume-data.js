@@ -1,6 +1,7 @@
 window.RESUME_DATA = {
     name: "Ethan Barr",
-    headline: "Founding Engineer • Backend Systems, Automation & Product Support",
+    headline:
+        "Founding Engineer • Backend Systems, Automation & Product Support",
     location: "Baltimore, MD • Open to Remote/Hybrid",
 
     github: "https://github.com/ebarr10",
@@ -15,31 +16,82 @@ window.RESUME_DATA = {
     skillGroups: [
         {
             label: "Languages",
-            skills: ["Python", "TypeScript", "JavaScript", "Java", "C", "SQL", "HTML", "CSS"],
+            skills: [
+                "Python",
+                "TypeScript",
+                "JavaScript",
+                "Java",
+                "C",
+                "SQL",
+                "HTML",
+                "CSS",
+            ],
         },
         {
             label: "Backend",
-            skills: ["Django", "Django REST Framework", "FastAPI", "Node.js", "REST APIs", "MySQL", "Redis", "Data Modeling"],
+            skills: [
+                "Django",
+                "Django REST Framework",
+                "FastAPI",
+                "Node.js",
+                "REST APIs",
+                "MySQL",
+                "Redis",
+                "Data Modeling",
+            ],
         },
         {
             label: "Frontend",
-            skills: ["React", "Next.js", "Tailwind CSS", "Reusable Components", "Responsive UI"],
+            skills: [
+                "React",
+                "Next.js",
+                "Tailwind CSS",
+                "Reusable Components",
+                "Responsive UI",
+            ],
         },
         {
             label: "Cloud & Data",
-            skills: ["Google Cloud Platform", "BigQuery", "Data Exports", "Operational Reporting", "Production Debugging"],
+            skills: [
+                "Google Cloud Platform",
+                "BigQuery",
+                "Data Exports",
+                "Operational Reporting",
+                "Production Debugging",
+            ],
         },
         {
             label: "DevOps & Infra",
-            skills: ["Docker", "Linux", "systemd", "Tailscale", "Prometheus", "Grafana", "GitHub Actions"],
+            skills: [
+                "Docker",
+                "Linux",
+                "systemd",
+                "Tailscale",
+                "Prometheus",
+                "Grafana",
+                "GitHub Actions",
+            ],
         },
         {
             label: "Support & Reliability",
-            skills: ["Incident Triage", "Root Cause Analysis", "Observability", "Staging Simulation", "Jira", "Zendesk"],
+            skills: [
+                "Incident Triage",
+                "Root Cause Analysis",
+                "Observability",
+                "Staging Simulation",
+                "Jira",
+                "Zendesk",
+            ],
         },
         {
             label: "AI & Automation",
-            skills: ["GitHub Apps", "LLM Tooling", "Prompt Design", "Workflow Automation", "AI-assisted Development"],
+            skills: [
+                "GitHub Apps",
+                "LLM Tooling",
+                "Prompt Design",
+                "Workflow Automation",
+                "AI-assisted Development",
+            ],
         },
     ],
 
@@ -85,7 +137,7 @@ window.RESUME_DATA = {
             title: "Software Engineer",
             company: "Foreman",
             location: "Remote / Baltimore, MD",
-            dates: "2023 — August 2026",
+            dates: "July 2022 — August 2026",
             scope: "Founding engineer (employee #4). Backend, frontend, automation, data workflows, and production operations for mining infrastructure software",
             sections: [
                 {
