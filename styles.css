@@ -177,6 +177,14 @@ strong {
     flex-wrap: wrap;
 }
 
+/* Let the title/scope column shrink so a long scope line does not push the
+   date onto its own row. flex-wrap breaks lines using each item's content
+   width before any shrinking happens, so the basis must be 0, not auto. */
+.item-head > div:first-child {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
 .item-title {
     font-weight: 800;
 }
