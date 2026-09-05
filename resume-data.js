@@ -1,7 +1,7 @@
 window.RESUME_DATA = {
     name: "Ethan Barr",
     headline:
-        "Founding Engineer • Backend Systems, Automation & Product Support",
+        "Founding-Team Software Engineer • Backend Systems, Automation & Product Support",
     location: "Baltimore, MD • Open to Remote/Hybrid",
 
     github: "https://github.com/ebarr10",
@@ -11,7 +11,7 @@ window.RESUME_DATA = {
     updatedText: "Updated: September 2026",
 
     summary:
-        "**Founding engineer (employee #4)** with **4+ years** building **Django/DRF backend systems**, full-stack product workflows, and operational tooling at a fast-growing mining infrastructure startup. Now owns the engineering side of customer support end to end, from escalation and **root-cause analysis** through fix, deploy verification, and the response back to the customer, after building the staging simulation and trigger-testing tooling that made those issues reproducible in the first place.",
+        "**Founding-team software engineer (employee #4)** with 4+ years building Django/DRF backend systems, full-stack product workflows, and operational tooling at a fast-growing mining infrastructure startup. Now owns the engineering side of customer support end to end, from escalation and root-cause analysis through fix, deploy verification, and the response back to the customer, after building the staging simulation and trigger-testing tooling that made those issues reproducible in the first place.",
 
     skillGroups: [
         {
