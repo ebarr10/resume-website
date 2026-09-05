@@ -35,7 +35,7 @@ window.RESUME_DATA = {
                 "FastAPI",
                 "Node.js",
                 "REST APIs",
-                "MySQL",
+                "SQL",
                 "Redis",
                 "Data Modeling",
             ],
