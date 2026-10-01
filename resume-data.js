@@ -226,7 +226,7 @@ window.RESUME_DATA = {
         {
             school: "University of Maryland, College Park",
             degree: "B.S. Computer Science, Minor in Astronomy",
-            dates: "2019 — 2023",
+            dates: "2018 — 2022",
         },
     ],
 };
