@@ -219,6 +219,51 @@ strong {
     margin-bottom: -2px;
 }
 
+.role {
+    margin-top: 12px;
+    padding-left: 12px;
+    border-left: 2px solid rgba(31, 78, 121, 0.25);
+}
+
+.role-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.role-head > div:first-child {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.role-title {
+    font-weight: 800;
+    font-size: 16px;
+    color: var(--accent);
+}
+
+.role .item-sub {
+    font-style: italic;
+}
+
+/* Section labels inside a role sit one level below the role title, so they
+   are styled as small uppercase labels rather than bold headings. */
+.role .nested-section-title {
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-top: 2px;
+}
+
+.role-date {
+    color: #111827;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
 ul {
     margin: 6px 0 0;
     padding-left: 18px;
@@ -264,8 +309,17 @@ a.inline:hover {
         line-height: 1.22;
     }
 
-    .inline {
+    .inline:not(.contact) {
         display: none !important;
+    }
+
+    #location,
+    #location + p {
+        display: inline;
+    }
+
+    #location::after {
+        content: " • ";
     }
 
     .actions,
@@ -364,6 +418,36 @@ a.inline:hover {
     .item-date,
     .item-location,
     .muted {
+        font-size: 9px;
+        color: #333 !important;
+    }
+
+    .role {
+        margin-top: 6px;
+        padding-left: 6px;
+        border-left: 1px solid rgba(31, 78, 121, 0.35);
+        break-inside: auto;
+    }
+
+    .role-head {
+        gap: 8px;
+    }
+
+    .role-title {
+        font-size: 10.8px;
+        color: var(--accent) !important;
+    }
+
+    .role .nested-section-title {
+        font-size: 7.8px;
+        color: #555 !important;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin-top: 3px;
+    }
+
+    .role-date {
         font-size: 9px;
         color: #333 !important;
     }

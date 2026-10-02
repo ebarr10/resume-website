@@ -113,6 +113,46 @@ function renderNestedSections(parent, sections) {
     parent.appendChild(sectionWrap);
 }
 
+// Multiple titles held at one company, newest first, so a promotion or
+// role change reads as one continuous tenure instead of separate jobs.
+function renderRoles(parent, roles) {
+    if (!roles || !roles.length) return;
+
+    roles.forEach((role) => {
+        const block = document.createElement("div");
+        block.className = "role";
+
+        const head = document.createElement("div");
+        head.className = "role-head";
+
+        const left = document.createElement("div");
+        const title = document.createElement("div");
+        title.className = "role-title";
+        title.textContent = role.title;
+        left.appendChild(title);
+
+        if (role.scope) {
+            const sub = document.createElement("div");
+            sub.className = "item-sub";
+            sub.textContent = role.scope;
+            left.appendChild(sub);
+        }
+
+        const date = document.createElement("div");
+        date.className = "role-date";
+        date.textContent = role.dates || "";
+
+        head.appendChild(left);
+        head.appendChild(date);
+        block.appendChild(head);
+
+        appendBullets(block, role.bullets);
+        renderNestedSections(block, role.sections);
+
+        parent.appendChild(block);
+    });
+}
+
 function renderListSection(containerId, items, type) {
     const el = document.getElementById(containerId);
     if (!el) return;
@@ -133,7 +173,9 @@ function renderListSection(containerId, items, type) {
         sub.className = "item-sub";
 
         if (type === "experience") {
-            title.textContent = `${item.title} — ${item.company}`;
+            title.textContent = item.title
+                ? `${item.title} — ${item.company}`
+                : item.company;
             sub.textContent = item.scope || item.location || "";
         } else if (type === "projects") {
             title.textContent = item.name;
@@ -181,6 +223,7 @@ function renderListSection(containerId, items, type) {
 
         appendBullets(wrap, item.bullets);
         renderNestedSections(wrap, item.sections);
+        renderRoles(wrap, item.roles);
 
         el.appendChild(wrap);
     });
@@ -189,6 +232,13 @@ function renderListSection(containerId, items, type) {
 setText("name", d.name);
 setText("headline", d.headline);
 setText("location", d.location);
+
+const emailEl = document.getElementById("email");
+if (emailEl) {
+    emailEl.textContent = d.email ?? "";
+    emailEl.href = d.email ? `mailto:${d.email}` : "#";
+    emailEl.style.display = d.email ? "" : "none";
+}
 setFormattedText("summary", d.summary);
 setText("updated", d.updatedText);
 
